@@ -1,0 +1,159 @@
+.leaflet-container {
+	width: 100%;
+	height: 90vh;
+}
+
+.map-overlay {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2000 !important;
+	position: absolute;
+	margin: 25px;
+}
+
+.div-selects {
+    display: flex;
+    flex-direction: row;
+}
+
+.select {
+    width: 250px;
+}
+
+.select:first-child {
+    margin-right: 5px;
+}
+
+.points {
+    width: 505px;
+    height: 350px;
+    background-color: white;
+    border-color: hsl(0, 0%, 80%);
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    margin-top: 5px;
+    overflow-y: auto;
+}
+
+.point-img {
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.144);
+    height: 175px;
+}
+
+.point-selected {
+    background-color: #408AAC;
+    border-radius: 5px;
+    height: 125px;
+    margin-top: 15px;
+}
+
+.point-filters {
+    margin-left: 20px;
+}
+
+.point-filters img {
+    width: 40px;
+    margin: 5px;
+}
+
+.points-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #408AAC;
+}
+
+.points-item span {
+    color: white;
+    font-size: 20px;
+}
+
+.points-item img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 35px;
+}
+
+.points-item .points-distance {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.filter-button {
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-color: hsl(0, 0%, 80%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font-weight:500;
+	font-size: 16px;
+    color: var(--text-color);
+}
+
+.filter-button svg {
+    height: 15px;
+}
+
+.scroll-horizontal {
+    height: 150px !important;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.items-filter {
+    display: flex;
+    height: 130px;
+}
+  
+.items-filter li {
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    height: 130px;
+    width: 130px;
+    border-radius: 8px;
+    padding: 15px 15px 16px;
+    margin-right: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.items-filter li span {
+    flex: 1;
+    margin-top: 12px;
+
+    display: flex;
+    align-items: center;
+    color: var(--title-color)
+}
+
+.items-filter li img {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    width: 48px;
+}
+
+.items-filter li.selected {
+    background: #E1FAEC;
+    border: 2px solid #34CB79;
+}
